@@ -1,0 +1,34 @@
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+
+    /* THEME STARTS */
+
+    /* Font-Family Used */
+    --heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --para: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+
+    /* Font-Size Used */
+    --extra_size:8vw;
+    --main_size:3vw;
+    --heading_size:2vw;
+    --subheading_size:1vw;
+    --para_size:.8vw;
+    --button_size:.6vw;
+
+    /* Color-Used */
+    --color-1: #f8f8f8;
+    --color-2: #D60000;
+    --color-3: #2A2A2A;
+
+    /* neomorphic shadows */
+
+    --neomorphic-shadow : -10px -10px 20px #242424,10px 10px 20px #303030;
+
+    /* FLEX */
+
+    
+    
+  }
+
+  
