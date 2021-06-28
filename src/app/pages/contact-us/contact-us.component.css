@@ -25,6 +25,16 @@
     overflow: scroll;
 }
 
+.bg_container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .bg_container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 .header_container
 {
     height: 10vh;
@@ -93,7 +103,7 @@
 
 .map
 {
-    width: 50vw;
+    width: 35vw;
     height: 50vh;
 }
 

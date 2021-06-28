@@ -10,8 +10,7 @@ import { ReactiveFormsModule} from '@angular/forms';
 
 import { HeaderComponent } from './components/header/header.component';
 
-import { DiComponent } from './components/forms/di/di.component';
-import { ConfirmingComponent } from './components/forms/confirming/confirming.component';
+
 
 
 
@@ -27,9 +26,7 @@ import { ConfirmingComponent } from './components/forms/confirming/confirming.co
   declarations: [
     AppComponent,
     RoutingComponent,
-    HeaderComponent,
-    DiComponent,
-    ConfirmingComponent
+    HeaderComponent
   ],
   
   imports: [
