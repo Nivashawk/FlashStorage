@@ -1,0 +1,185 @@
+.bg-container
+{
+    height:83vh;
+    width:100vw;
+    background: #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+}
+
+.bg-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .bg-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.container
+{
+    display: flex;
+    width: 80vw;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+    padding-top:5vh;
+    padding-bottom: 2vh;
+    flex-wrap: wrap;
+    
+}
+.heading
+{
+    border-radius:10px;
+    color: #D60000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5vh;
+    font-weight: 300;
+    padding-bottom: 5px;
+    margin-bottom: 0vh;
+}
+
+.form_container
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+
+}
+.label
+{
+    border-radius:10px;
+    color: #F3F3F3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vh;
+    padding: 5px;
+}
+
+.checkbox
+{
+    margin: 10px;
+}
+
+.Quotation_box
+{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-radius:10px;
+    background-color: #F3F3F3;
+}
+
+.form__field__budget
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #D60000;
+    font-size: 1.5vh;
+    background:transparent;
+    border-radius:10px;
+    margin-top: 5vh;
+}
+
+.secondary_camera_form
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__field
+{
+    margin: 10px;
+    padding: 10px;
+    width: 25vw;
+    height: 3vh;
+    background:transparent;
+    border-radius:10px;
+    border-color: transparent;
+    box-shadow:  -10px -10px 20px #242424,
+                    10px 10px 20px #303030;
+    outline: none;
+    color: #D60000;
+    font-size: 1.5vh;
+}
+
+.form__field1
+{
+    margin: 10px;
+    padding: 10px;
+    width: 26vw;
+    height: 5vh;
+    background:transparent;
+    border-radius:10px;
+    border-color: transparent;
+    box-shadow:  -10px -10px 20px #242424,
+                    10px 10px 20px #303030;
+    outline: none;
+    color: #D60000;
+    font-size: 1.5vh;
+}
+
+.button
+{
+    margin: 10px;
+    padding: 10px;
+    width: 15vw;
+    height: 5vh;
+    border-radius:15px;
+    background:transparent;
+    border-color: transparent;
+    box-shadow:  -10px -10px 20px #242424,
+                    10px 10px 20px #303030;
+    outline: none;
+    color: #D60000;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    width: 10vw;
+    height: 5vh;
+}
+
+small
+{
+    color: #D60000;
+    margin-bottom: 20px;
+}
+
+
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+
+@media only screen and (max-device-width: 480px) 
+{ 
+    .form__field1{
+        width: 65vw;
+        height: 7vh;
+        font-size: 1.5vh;
+    }
+
+    .form__field{
+        width: 60vw;
+        height: 5vh;
+        font-size: 1.5vh;
+    }
+
+    .button{
+        width: 30vw;
+    }
+
+}

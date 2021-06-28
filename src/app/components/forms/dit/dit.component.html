@@ -1,0 +1,76 @@
+<app-header></app-header>
+<div class="bg-container">
+    <div class="container">
+        <div class="heading">DETAILED QUOTATION</div>
+        <form [formGroup]="first_entry" class="form_container">
+
+                <label class="label" for="name">PRODUCTION NAME</label>
+                <input id="name" type="text" formControlName="PRODUCTION_NAME" class="form__field">
+    
+                <label class="label" for="name">ENTER THE TOTAL NO OF DAYS</label>
+                <input id="name" type="text" formControlName="TOTAL_NO_OF_DAYS" class="form__field">
+                <small class="error" *ngIf="first_entry.get('TOTAL_NO_OF_DAYS').invalid && first_entry.get('TOTAL_NO_OF_DAYS').touched">Required(only numerical value accepted)</small>
+    
+                <label class="label" for="SELECT_THE_PRIMARY_CAMERA">SELECT THE PRIMARY CAMERA</label>
+                <select id="SELECT_THE_PRIMARY_CAMERA" formControlName="SELECT_THE_PRIMARY_CAMERA" class="form__field1">
+                    <option value = "1" selected>ARRI ALEXA XT</option>
+                    <option value = "1"> ARRI ALEXA SXT</option>
+                    <option value = "1.3">ARRI ALEXA SXTLF</option>
+                    <option value = "1.75">ARRI ALEXA SXTLF(OPEN GATE)</option>
+                    <option value = "0.8">ARRI ALEXA MINI</option>
+                    <option value = "1.4">ARRI ALEXA MINILF</option>
+                    <option value = "2">ARRI ALEXA MINILF(OPEN GATE)</option>
+                    <option value = "1">RED DRAGON</option>
+                    <option value = "1">RED HELIUM</option>
+                    <option value = "1">RED WEAPON</option>
+                    <option value = "1">BLACK MAGIC 4.6k</option>
+                    <option value = "1">CANON CODEX</option>
+                </select>
+                <small *ngIf="first_entry.get('SELECT_THE_PRIMARY_CAMERA').invalid && first_entry.get('SELECT_THE_PRIMARY_CAMERA').touched">Required</small>
+    
+                <label class="label" for="HDD_STORAGE_TYPE">HDD STORAGE TYPE</label>
+                <select id="HDD_STORAGE_TYPE" formControlName="HDD_STORAGE_TYPE" class="form__field1">
+                    <option value = "3.5" >4 TB</option>
+                    <option value = "5.4">6 TB</option>
+                    <option value = "7.2">8 TB</option>
+                </select>
+                <small *ngIf="first_entry.get('HDD_STORAGE_TYPE').invalid && first_entry.get('HDD_STORAGE_TYPE').touched">Required</small>
+                
+                <!-- <div class="form__field">
+                    <input type="checkbox" id="SC" name="SC" value="1" formControlName="checkbox_value" class="checkbox">
+                    <label class="label" for="SC">DO YOU USE SECONDARY CAMERA ?</label>
+                </div> -->
+
+                
+                <div class="secondary_camera_form">
+                    
+                    <label class="label" for="USAGE_OF_SECONDARY_CAMERA_IN_DAYS">USAGE OF SECONDARY CAMERA IN DAYS</label>
+                    <input id="USAGE_OF_SECONDARY_CAMERA_IN_DAYS" type="text" formControlName="USAGE_OF_SECONDARY_CAMERA_IN_DAYS" class="form__field">
+                    <small *ngIf="first_entry.get('USAGE_OF_SECONDARY_CAMERA_IN_DAYS').invalid && first_entry.get('USAGE_OF_SECONDARY_CAMERA_IN_DAYS').touched">Required(only numerical accepted)</small>
+    
+                    <label class="label" for="SELECT_THE_SECONDARY_CAMERA">SELECT THE SECONDARY CAMERA</label>
+                    <select id="SELECT_THE_SECONDARY_CAMERA" formControlName="SELECT_THE_SECONDARY_CAMERA" class="form__field1">
+                        <option value = "0" selected>NONE</option>
+                        <option value = "1" >ARRI ALEXA XT</option>
+                    <option value = "1.5"> ARRI ALEXA SXT</option>
+                    <option value = "1.75">ARRI ALEXA SXTLF</option>
+                    <option value = "2">ARRI ALEXA SXTLF(OPEN GATE)</option>
+                    <option value = "1">ARRI ALEXA MINI</option>
+                    <option value = "1">ARRI ALEXA MINILF</option>
+                    <option value = "2.5">ARRI ALEXA MINILF(OPEN GATE)</option>
+                    <option value = "1">RED DRAGON</option>
+                    <option value = "1.5">RED HELIUM</option>
+                    <option value = "1.5">RED WEAPON</option>
+                    <option value = "1">BLACK MAGIC 4.6k</option>
+                    <option value = "1.5">CANON CODEX</option>
+                    </select>
+                    <small *ngIf="first_entry.get('SELECT_THE_SECONDARY_CAMERA').invalid && first_entry.get('SELECT_THE_SECONDARY_CAMERA').touched">Required</small>
+                </div>
+                <button type="submit" class="button" [formGroup]="first_entry" (click)="onSubmit()">DOWNLOAD</button>
+                <div *ngIf="submitError" class="label">
+                    Please fill all the required fields
+                </div>
+            </form>
+        </div>
+</div>
+<app-navigation></app-navigation>

@@ -1,0 +1,21 @@
+.header{
+    height: 7vh;
+    width: 100vw;
+    background: #2A2A2A;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+img{
+    height: 8vh;
+    width: auto;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    cursor: pointer;
+}
+
+.HOME{
+    color: #D60000;
+    cursor: pointer;
+}

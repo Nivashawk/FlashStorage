@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="bg-container">
+    <div class="container">
+        <div class="heading">GENERAL QUOTATION</div>
+        <form [formGroup]="first_entry" class="form_container">
+
+                <label class="label" for="name">PRODUCTION NAME</label>
+                <input id="name" type="text" formControlName="PRODUCTION_NAME" class="form__field">
+    
+                <label class="label" for="name">ENTER THE TOTAL NO OF DAYS</label>
+                <input id="name" type="text" formControlName="TOTAL_NO_OF_DAYS" class="form__field">
+                <small class="error" *ngIf="first_entry.get('TOTAL_NO_OF_DAYS').invalid && first_entry.get('TOTAL_NO_OF_DAYS').touched">Required(only numerical value accepted)</small>
+
+                
+                <button type="submit" class="button" [formGroup]="first_entry" (click)="onSubmit()">DOWNLOAD</button>
+                <div *ngIf="submitError" class="label">
+                    Please fill all the required fields
+                </div>
+            </form>
+        </div>
+</div>
+<app-navigation></app-navigation>

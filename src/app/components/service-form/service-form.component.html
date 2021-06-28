@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="container">
+    <form [formGroup]="first_entry">
+        <div *ngFor="let item of data; let i = index">
+            <input [type]="item.dataType" [formControlName]="item.field_name" [placeholder]="item.field_name" class="form__field">
+        </div>
+    </form>
+    <button type="submit" class="button" [formGroup]="first_entry" (click)="onSubmit()">SUBMIT</button>
+</div>
+
+<!-- <pre>{{first_entry.value | json}}</pre>
+
+<div>working</div> -->
+<app-navigation></app-navigation>
