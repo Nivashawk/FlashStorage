@@ -1,0 +1,56 @@
+[
+    {
+        "s.no" : 1,
+        "employee_name" : "SWATHICK RAJ",
+        "employee_pic" : "/assets/employees/ceo.jpg",
+        "employee_desigination" : "CEO"
+    },
+    {
+        "s.no" : 2,
+        "employee_name" : "NAVEEN S",
+        "employee_pic" : "/assets/employees/avatar.jpg",
+        "employee_desigination" : "BDE & SENIOR COLORIST"
+    },
+    {
+        "s.no" : 3,
+        "employee_name" : "ANBUDHASAN S",
+        "employee_pic" : "/assets/employees/avatar.jpg",
+        "employee_desigination" : "DIT"
+    },
+    {
+        "s.no" : 4,
+        "employee_name" : "KARTHICK S",
+        "employee_pic" : "/assets/employees/avatar.jpg",
+        "employee_desigination" : "DIT"
+    },
+    {
+        "s.no" : 9,
+        "employee_name" : "CHALES",
+        "employee_pic" : "/assets/employees/avatar.jpg",
+        "employee_desigination" : "DIT"
+    },
+    {
+        "s.no" : 5,
+        "employee_name" : "AKASH",
+        "employee_pic" : "/assets/employees/avatar.jpg",
+        "employee_desigination" : "DATA WRANGLER"
+    },
+    {
+        "s.no" : 6,
+        "employee_name" : "SABARIGIRI VASAN",
+        "employee_pic" : "/assets/employees/avatar.jpg",
+        "employee_desigination" : "DATA WRANGLER"
+    },
+    {
+        "s.no" : 7,
+        "employee_name" : "SARAN",
+        "employee_pic" : "/assets/employees/avatar.jpg",
+        "employee_desigination" : "EDITOR"
+    },
+    {
+        "s.no" : 8,
+        "employee_name" : "NIVAS S",
+        "employee_pic" : "/assets/employees/avatar.jpg",
+        "employee_desigination" : "TD & DEVELOPER"
+    }
+]

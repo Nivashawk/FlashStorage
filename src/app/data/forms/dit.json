@@ -1,0 +1,14 @@
+[
+    {
+        "field_name" : "Estimated no of days for shoot",
+        "datatype" : "text"
+    },
+    {
+        "field_name" : "Estimated exposure per day(TB)",
+        "datatype" : "text"
+    },
+    {
+        "field_name" : "No Of days",
+        "datatype" : "dropdown"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {   
+        "s.no" :1,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/ANEGAN.jpg",
+        "movie_name" : "ANEGAN"
+    },
+    {   
+        "s.no" :2,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/APPA.jpg",
+        "movie_name" : "APPA"
+    },
+    {   
+        "s.no" :3,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/DEDHISHQIYA.jpeg",
+        "movie_name" : "DEDHISHQIYA"
+    },
+    {   
+        "s.no" :4,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/kaashmora.jpg",
+        "movie_name" : "KAASHMORA"
+    },
+    {   
+        "s.no" :5,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/KAVAN.jpg",
+        "movie_name" : "KAVAN"
+    },
+    {   
+        "s.no" :6,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/MOHANDASS.jpg",
+        "movie_name" : "MOHANDOSS"
+    },
+    {   
+        "s.no" :7,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/POKKIRIRAJA.jpg",
+        "movie_name" : "POKKIRI RAJA"
+    },
+    {   
+        "s.no" :8,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/thondan.jpg",
+        "movie_name" : "THONDAN"
+    },
+    {   
+        "s.no" :9,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/SARPATTA.jpeg",
+        "movie_name" : "SARPATA"
+    },
+    {   
+        "s.no" :10,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/VAALU.jpg",
+        "movie_name" : "VAALU"
+    },
+    {   
+        "s.no" :11,
+        "service_name" :"DIT",
+        "image" : "/assets/projects/YATCHAN.jpg",
+        "movie_name" : "YATACHAN"
+    }
+]

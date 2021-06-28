@@ -1,0 +1,47 @@
+[
+    {   
+        "Sno" : 1,
+        "name" : "DIT",
+        "discription" : "Most digital footage on professional shoots is shot raw, which means it has no colour baked in and the colour is applied in post-production. We apply colour to the raw footage to give an idea of how it will look.And we might be asked to put it into a viewable file so the director can watch it on a tablet on the way home.",
+        "general_quotation" : "/assets/quotations/DIT.pdf",
+        "route_func" : "Route_to_DIT",
+        "button1_visibility" : true,
+        "button2_visibility" : true,
+        "button1": "GENERAL QUOTATION",
+        "button2":"DETAILED QUOTATION"
+    },
+    {
+        "Sno" : 2,
+        "name" : "DI",
+        "discription" : "In the days of 4K, 6K and enhanced HDR, nothing is more stunning than a beautifully graded film viewed at full resolution. To achieve the best possible results, we combine technique with passion, vision, and intuition.Our team's tool of preference is DaVinci Resolve.",
+        "general_quotation" : "/assets/quotations/DI.pdf",
+        "route_func" : "Route_to_DI",
+        "button1_visibility" : true,
+        "button2_visibility" : false,
+        "button1": "GENERAL QUOTATION",
+        "button2":"COMING SOON"
+    },
+    {
+        "Sno" : 5,
+        "name" : "DEVELOPMENT",
+        "discription" : "We are an experienced team with backgrounds in Web Design, Web Development, User Experience design, and more. We apply our digital knowledge to your business’s goals and budget to create a scope of work that will help you grow your business.",
+        "general_quotation" : "/assets/quotations/zedByte.pdf",
+        "route_func" : "Route_to_DUBBING",
+        "button1_visibility" : true,
+        "button2_visibility" : false,
+        "button1": "VIEW BROCHURE",
+        "button2":"COMING SOON"
+    },
+    {
+        "Sno" : 3,
+        "name" : "EDITING",
+        "discription" : "The film editor works with the raw footage, selecting shots and combining them into sequences which create a finished motion picture. Film editing is described as an art or skill.",
+        "general_quotation" : "/assets/quotations/EDITING.pdf",
+        "route_func" : "Route_to_EDITING",
+        "button1_visibility" : false,
+        "button2_visibility" : false,
+        "button1": "COMING SOON",
+        "button2":"COMING SOON"
+        
+    }
+]
