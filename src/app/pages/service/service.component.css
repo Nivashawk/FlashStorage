@@ -1,0 +1,125 @@
+
+.bg_container, .cards_container, .card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_container, .card
+{
+    flex-direction: column;
+}
+
+._text, p
+{
+    padding-top:10px;
+}
+
+.bg_container
+{
+    height:83vh;
+    width:100vw;
+    justify-content: flex-start;
+    background: var(--color-3);
+}
+
+.cards_container
+{
+    width: 80vw;
+    padding-top:5vh;
+    padding-bottom: 2vh;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.card
+{
+    border-radius:30px;
+    min-height: 20vh;
+    min-width: 20vw;
+    margin: 2vh;
+    justify-content: flex-start;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+    width: 20vw;
+    box-shadow: var(--neomorphic-shadow)
+}
+
+
+
+.button_container
+{
+    display: flex;
+}
+
+.button
+{
+    margin-top: 3vh;
+    margin-left: 1vh;
+    cursor: pointer;
+    background:transparent;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    color: var(--color-2);
+    font-size: var(--button_size);
+    border-color: var(--color-2);
+}
+
+.button:hover
+{
+    color: var(--color-1);
+}
+
+._text
+{
+    font-weight: 600;
+    font-size: var(--subheading_size);
+    font-family: var(--heading);
+    color: var(--color-2);
+}
+
+p
+{
+    text-align: left;
+    font-family: var(--para);
+    font-size: var(--para_size);
+    color: var(--color-1);
+}
+
+.gap
+{
+    height: 6vh;
+}
+
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+@media only screen and (max-device-width: 480px)  
+{ 
+    .card
+    {
+        min-height: 10vh;
+        min-width: 50vw;
+    }
+
+    ._text
+    {
+        font-size: 3vw;
+    }
+
+    p, .button
+    {
+        font-size: 2vw;
+    }
+
+    .cards_container
+    {
+        padding-top:0vh;
+        padding-bottom: 0vh;
+    }
+}

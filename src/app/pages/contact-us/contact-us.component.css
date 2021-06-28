@@ -1,0 +1,127 @@
+.bg_container, .header_container, .cards_container, .contact_container, .FAQ
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading, ._text, ._text1, .para
+{
+    font-weight: 600;
+    padding-top:10px;
+}
+
+.bg_container, .cards_container, .FAQ
+{
+    flex-direction: column;
+}
+
+.bg_container
+{
+    height:83vh;
+    width:100vw;
+    background: var(--color-3);
+    justify-content: flex-start;
+    overflow: scroll;
+}
+
+.header_container
+{
+    height: 10vh;
+    width:100vw;
+}
+
+.heading
+{
+    font-weight: 500;
+    color: var(--color-1);
+    font-family: var(--heading);
+    font-size: var(--heading_size);
+    
+}
+
+.cards_container
+{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-family: var(--heading);
+}
+
+.FAQ
+{
+    width:60vw;
+    text-align: center;
+}
+
+.contact_container
+{
+    flex-wrap: wrap;
+    margin-bottom:1vh  ;
+}
+
+._text, ._text1
+{
+    font-family: var(--para);
+    font-size: var(--subheading_size);
+    color: var(--color-2);
+}
+
+.para
+{
+    font-weight: 100;
+    margin-bottom: 1vh;
+    color: var(--color-1);
+    font-family: var(--para);
+    font-size: var(--para_size);
+}
+
+.button
+{
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    margin: 2vh;
+    font-size: var(--para_size);
+    font-family: var(--para);
+    background:transparent;
+    color: var(--color-2);
+    box-shadow: var(--neomorphic-shadow) ;
+}
+
+
+.map
+{
+    width: 50vw;
+    height: 50vh;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+@media only screen and (max-device-width: 480px)  
+{ 
+    .heading
+    {
+        font-size: 8vw;
+    }
+    
+    .para
+    {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .button
+    {
+        font-size: 3vw;
+    }
+
+    .map
+    {
+        width: 80vw;
+
+    }
+    
+}

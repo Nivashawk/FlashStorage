@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="bg_container">
+    <div class="cards_container">
+        <div *ngFor="let project of project_data " class="card">
+            <h1 class="_text">{{project.service_name}}</h1>
+            <img src="{{project.image}}" alt="">
+            <p>{{project.movie_name}}</p>
+        </div>
+    </div>
+</div>
+<app-navigation></app-navigation>

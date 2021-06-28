@@ -1,0 +1,123 @@
+.bg_container, .cards_container, .card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bg_container, .card
+{
+    flex-direction: column;
+}
+
+
+.bg_container
+{
+    height:83vh;
+    width:100vw;
+    justify-content: flex-start;
+    overflow: auto;
+    background: var(--color-3);
+}
+
+
+.bg_container::-webkit-scrollbar
+{
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .bg_container 
+  {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+img
+{
+    margin: 10px;
+    height: 50vh;
+    width: 20vw;
+    border-radius: 30px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+img:hover
+{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.cards_container
+{
+    margin-top: 30px;
+    width: 80vw;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+.card
+{
+    justify-content: flex-start;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.card:hover p
+{
+    color:var(--color-2);
+}
+
+._text
+{
+    font-weight: 600;
+    padding-top:10px;
+    color:var(--color-2);
+    font-family: var(--heading);
+    font-size: var(--subheading_size);
+}
+
+p
+{
+    padding-top:20px;
+    color: var(--color-1);
+    font-size: var(--subheading_size);
+    font-family: var(--para);
+}
+
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+@media only screen and (max-device-width: 480px)   
+{ 
+    img
+    {
+        height: auto;
+        width: 60vw;
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+
+    .cards_container
+    {
+        margin-top: 10px;
+    }
+
+    ._text
+    {
+        font-size: 3vw;
+    }
+
+    p
+    {
+        font-size: 2vw;
+    }
+    
+}

@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="bg_container">
+    <div class="cards_container">
+        <div *ngFor="let service of service_data" class="card" (click) = "Route_to_SERVICE(service.name)">
+            <h1 class="_text">{{service.name}}</h1>
+            <!-- discription should be exactly 100 words -->
+            <p>{{service.discription}}</p>
+            <div class="button_container">
+                <button *ngIf="service['button1_visibility']" class="button" (click) = "LeftRoute(service.name)">{{service.button1}}</button>
+                <button *ngIf="service['button2_visibility']" class="button" (click) = "RightRoute(service.name)">{{service.button2}}</button>
+            </div>
+        </div>
+        <div class="gap">
+                
+        </div>  
+    </div>
+</div>
+<app-navigation></app-navigation>

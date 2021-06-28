@@ -1,0 +1,84 @@
+.bg_container
+{
+    height:83vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    background: var(--color-3);
+}
+
+.bg_container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .bg_container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.text_container
+{
+    width:70vw;
+    padding-top: 3vh;
+    font-weight: 300;
+    font-family: var(--para);
+    font-size: var(--subheading_size);
+}
+
+._text1
+{
+    font-weight: 600;
+    padding-top:3vh;
+    color: var(--color-1);
+    font-family: var(--heading);
+    font-size: var(--heading_size);
+}
+
+.para
+{
+    font-weight: 300;
+    padding-top:3vh;
+    color: var(--color-1);
+    font-family: var(--para);
+    font-size: var(--para_size);
+   
+}
+
+._text
+{
+    font-weight: 600;
+    color: var(--color-2);
+    font-family: var(--heading);
+    font-size: var(--extra_size);
+}
+
+.gap
+{
+    height: 6vh;
+}
+  
+/* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+@media only screen and (max-device-width: 480px)  
+{ 
+    ._text
+    {
+        font-size: 18vw;
+    }
+
+    ._text1
+    {
+        font-size: 10vw;
+    }
+
+    .para
+    {
+        font-size: 5vw;
+    }
+    
+}
