@@ -14,6 +14,16 @@
     background: var(--color-3);
 }
 
+.bg_container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.bg_container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .image_wrap
 {
   width: 100vw;
@@ -57,7 +67,7 @@
   font-weight: 900;
   margin-top: 3vh;
   color: var(--color-2);
-  font-family: var(--para);
+  font-family: var(--heading);
 }
 
 .text_container

@@ -1,97 +1,143 @@
-.bg_container{
+.bg_container, .header_container, .cards_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bg_container, .cards_container
+{
+    flex-direction: column;
+}
+
+
+.bg_container
+{
     height:83vh;
     width:100vw;
-    background: #2A2A2A;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     overflow: scroll;
+    background: var(--color-3);
 }
 
-.header_container{
-    height: 10vh;
-    width:100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.heading{
-    color: #f8f8f8;
-    font-weight: 500;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5vw;
-    padding-top:10px;
-}
-
-.cards_container{
-    margin-top: 5vh;
-    display: flex;
-    gap: 3vw;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #D60000;
-}
-
-.text_container{
-    width:70vw;
-    padding-top: 30px;
-    color: #F3F3F3;
-    font-weight: 300;
-    font-family: var(--para);
-    font-size: 1vw;
-}
-
-.bg_container::-webkit-scrollbar {
+.bg_container::-webkit-scrollbar
+{
     display: none;
-  }
+}
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  .bg_container {
+  .bg_container 
+  {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
 
-
-._text{
-    font-weight: 600;
-    color: #D60000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15vw;
+.header_container
+{
+    height: 10vh;
+    width:100vw;
 }
 
-._text1{
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2vw;
-    padding-top:5vh;
+.heading
+{
+    font-weight: 500;
+    padding-top:10px;
+    font-family: var(--heading);
+    font-size: var(--subheading_size);
+    color: var(--color-1);
 }
 
-.para{
+.cards_container
+{
+    margin-top: 5vh;
+    gap: 3vw;
+    font-family: var(--heading);
+    color: var(--color-2);
+}
+
+.text_container
+{
+    width:70vw;
+    padding-top: 30px;
     font-weight: 300;
-    color: #f8f8f8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1vw;
+    color: var(--color-1);
+    font-family: var(--para);
+    font-size: var(--subheading_size);
+}
+
+
+._text
+{
+    font-weight: 600;
+    font-size: 17vw;
+    color: var(--color-2);
+    font-family: var(--para);
+}
+
+._text1, .para
+{
     padding-top:5vh;
 }
 
-.para div{
+._text1
+{
+    font-weight: 600;
+    font-family: var(--para);
+    font-size: var(--heading_size);
+}
+
+.para
+{
+    font-weight: 300;
+    color: var(--color-1);
+    font-family: var(--para);
+    font-size: var(--subheading_size);
+}
+
+.para div, .para li
+{
     padding-bottom: 2vh;
 }
 
-.para li{
-    padding-bottom: 2vh;
-}
 
-.para div b{
-    font-size: 1.2vw;
+.para div b
+{
+    font-size: var(--subheading_size);
     text-decoration: underline;
     
 }
 
+.button_container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.button
+{
+    margin-top: 3vh;
+    margin-left: 1vh;
+    cursor: pointer;
+    background:transparent;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    color: var(--color-2);
+    font-size: var(--subheading_size);
+    border-color: var(--color-2);
+}
+
+.button:hover
+{
+    color: var(--color-1);
+}
+
+.gap
+{
+    height: 4vh;
+}
 
 
 
@@ -115,4 +161,8 @@
         font-size: 5vw;
     }
     
+    .button
+    {
+        font-size: 2vw;
+    }
 }

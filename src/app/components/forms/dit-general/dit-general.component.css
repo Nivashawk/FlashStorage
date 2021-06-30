@@ -1,86 +1,95 @@
-.bg-container{
-    height:83vh;
-    width:100vw;
-    background: #2A2A2A;
+.bg-container, .container, .form_container, .Quotation_box, .form__field__budget, .secondary_camera_form
+{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
 }
 
-.container{
-    display: flex;
+.bg-container, .form_container, .form__field__budget, .secondary_camera_form
+{
+    flex-direction: column;
+}
+
+.bg-container
+{
+    height:83vh;
+    width:100vw;
+    background: var(--color-3);
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.bg-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .bg-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.container
+{
     width: 80vw;
     gap: 3vw;
-    justify-content: center;
-    align-items: center;
     padding-top:5vh;
     padding-bottom: 2vh;
     flex-wrap: wrap;
-    overflow: auto;
+    
 }
-.heading{
+.heading
+{
     border-radius:10px;
-    color: #D60000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-2);
+    font-family: var(--heading);
     font-size: 2.5vh;
     font-weight: 300;
     padding-bottom: 5px;
-    margin-bottom: 4vh;
+    margin-bottom: 0vh;
 }
 
-.form_container{
+.form_container
+{
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
     overflow: auto;
 
 }
-.label{
+.label
+{
     border-radius:10px;
-    color: #F3F3F3;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-1);
+    font-family: var(--para);
     font-size: 1vh;
     padding: 5px;
 }
 
-.checkbox{
+.checkbox
+{
     margin: 10px;
 }
 
-.Quotation_box{
-    display: flex;
+.Quotation_box
+{
     height: 20vh;
-    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     border-radius:10px;
-    background-color: #F3F3F3;
+    background-color: var(--color-1);
 }
 
-.form__field__budget{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: #D60000;
+.form__field__budget
+{
+    color: var(--color-2);
     font-size: 1.5vh;
     background:transparent;
     border-radius:10px;
     margin-top: 5vh;
 }
 
-.secondary_camera_form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form__field{
+.form__field
+{
     margin: 10px;
     padding: 10px;
     width: 25vw;
@@ -88,14 +97,14 @@
     background:transparent;
     border-radius:10px;
     border-color: transparent;
-    box-shadow:  -10px -10px 20px #242424,
-                    10px 10px 20px #303030;
+    box-shadow:  var(--neomorphic-shadow);
     outline: none;
-    color: #D60000;
+    color: var(--color-2);
     font-size: 1.5vh;
 }
 
-.form__field1{
+.form__field1
+{
     margin: 10px;
     padding: 10px;
     width: 26vw;
@@ -103,14 +112,14 @@
     background:transparent;
     border-radius:10px;
     border-color: transparent;
-    box-shadow:  -10px -10px 20px #242424,
-                    10px 10px 20px #303030;
+    box-shadow:  var(--neomorphic-shadow);
     outline: none;
-    color: #D60000;
+    color: var(--color-2);
     font-size: 1.5vh;
 }
 
-.button{
+.button
+{
     margin: 10px;
     padding: 10px;
     width: 15vw;
@@ -118,10 +127,10 @@
     border-radius:15px;
     background:transparent;
     border-color: transparent;
-    box-shadow:  -10px -10px 20px #242424,
-                    10px 10px 20px #303030;
+    box-shadow:  var(--neomorphic-shadow);
     outline: none;
-    color: #D60000;
+    color: var(--color-2);
+    cursor: pointer;
 }
 
 .button:hover
@@ -130,10 +139,13 @@
     height: 5vh;
 }
 
-small{
-    color: #D60000;
+small
+{
+    color: var(--color-2);
     margin-bottom: 20px;
 }
+
+
 
 /* smartphones, iPhone, portrait 480x320 phones */ 
 
