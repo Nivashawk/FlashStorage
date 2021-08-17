@@ -69,7 +69,7 @@ export class DitComponent implements OnInit {
     {
       return 6;
     }
-    else if (hdd_price == 16000)
+    else if (hdd_price == 18500)
     {
       return 8;
     }
