@@ -51,7 +51,7 @@ export class DitGeneralComponent implements OnInit {
    
     // QOUTATION CALCULATION STARTS HERE
 
-    this.OVERALL_SERVICE_CHARGES = Math.round((this.TND * 2500)).toString().replace(/(\d)(?=(\d\d)+\d$)/g, "$1,");
+    this.OVERALL_SERVICE_CHARGES = Math.round((this.TND * 3500)).toString().replace(/(\d)(?=(\d\d)+\d$)/g, "$1,");
     // console.log(this.OVERALL_SERVICE_CHARGES);
 
 

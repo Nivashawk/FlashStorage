@@ -55,7 +55,7 @@ export class DitComponent implements OnInit {
     }
     else if (HST == 7.2)
     {
-      return 16000;
+      return 18500;
     }
   }
 
