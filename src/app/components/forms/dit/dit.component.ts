@@ -55,7 +55,7 @@ export class DitComponent implements OnInit {
     }
     else if (HST == 7.2)
     {
-      return 16000;
+      return 17000;
     }
   }
 
@@ -69,7 +69,7 @@ export class DitComponent implements OnInit {
     {
       return 6;
     }
-    else if (hdd_price == 16000)
+    else if (hdd_price == 17000)
     {
       return 8;
     }
