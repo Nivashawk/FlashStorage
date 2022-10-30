@@ -16,7 +16,7 @@ import { DitGeneralComponent } from './components/forms/dit-general/dit-general.
 
 
 const routes: Routes = [
-  {path:"",component:HomeComponent},
+  {path:"home",component:HomeComponent},
   {path:"services",component:ServiceComponent},
   {path:"projects",component:ProjectsComponent},
   {path:"about-us",component:AboutUsComponent},
@@ -27,8 +27,13 @@ const routes: Routes = [
   {path:"service/di",component:ServiceDiComponent},
   {path:"service/conforming",component:ServiceConformingComponent},
   {path:"service/WD",component:ServiceWDComponent},
-  {path:"form/dit",component:DitComponent},
-  {path:"form/dit_general",component:DitGeneralComponent}
+  {path:"form_dit",component:DitComponent},
+  {path:"form/dit_general",component:DitGeneralComponent},
+  {
+    path: "**",
+    component:HomeComponent
+  }
+
 ];
 
 @NgModule({

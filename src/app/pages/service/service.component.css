@@ -18,7 +18,7 @@
 
 .bg_container
 {
-    height:83vh;
+    height:93vh;
     width:100vw;
     justify-content: flex-start;
     background: var(--color-3);
@@ -46,8 +46,6 @@
     width: 20vw;
     box-shadow: var(--neomorphic-shadow)
 }
-
-
 
 .button_container
 {

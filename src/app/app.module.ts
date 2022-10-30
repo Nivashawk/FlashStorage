@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule, RoutingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule} from '@angular/forms';
@@ -10,15 +9,10 @@ import { ReactiveFormsModule} from '@angular/forms';
 
 import { HeaderComponent } from './components/header/header.component';
 
-import { DiComponent } from './components/forms/di/di.component';
-import { ConfirmingComponent } from './components/forms/confirming/confirming.component';
+// import { DiComponent } from './components/forms/di/di.component';
+// import { DiComponent } from '../app/components/forms/';
 
-
-
-
-
-
-
+// import { ConfirmingComponent } from './components/forms/confirming/confirming.component';
 
 
 
@@ -28,10 +22,10 @@ import { ConfirmingComponent } from './components/forms/confirming/confirming.co
     AppComponent,
     RoutingComponent,
     HeaderComponent,
-    DiComponent,
-    ConfirmingComponent
+    // DiComponent,
+    // ConfirmingComponent
   ],
-  
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,

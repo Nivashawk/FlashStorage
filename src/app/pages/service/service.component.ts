@@ -88,7 +88,7 @@ export class ServiceComponent implements OnInit, AfterViewInit  {
   // right OnClick routing button starts here
 
   Route_to_DIT(){
-    this.router.navigate(["form/dit"]);
+    this.router.navigate(["form_dit"]);
   }
 
   Route_to_DI(){

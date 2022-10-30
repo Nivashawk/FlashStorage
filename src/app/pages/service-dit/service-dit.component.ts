@@ -16,8 +16,9 @@ export class ServiceDitComponent implements OnInit {
   // right OnClick routing button starts here
 
   Route_to_DIT(){
-    this.router.navigate(["form/dit"]);
+    this.router.navigate(["form_dit"]);
   }
+
   RightRoute(name){
     if(name == "DIT")
     {

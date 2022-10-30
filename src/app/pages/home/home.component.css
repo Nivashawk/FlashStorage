@@ -8,7 +8,7 @@
 
 .bg_container
 {
-    height:83vh;
+    height:93vh;
     width:100vw;
     overflow: auto;
     background: var(--color-3);
@@ -51,10 +51,10 @@
 
 .home_text
 {
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 3vh;
   color: var(--color-2);
   font-family: var(--para);
@@ -71,10 +71,11 @@
 
 ._text
 {
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--para);
-  font-size: var(--heading_size);
+  font-size: var(--subheading_size);
   color: var(--color-1);
+  text-align: center;
 }
 
 #spin:after 

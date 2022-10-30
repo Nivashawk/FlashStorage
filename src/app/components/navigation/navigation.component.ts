@@ -12,10 +12,10 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    VanillaTilt.init(document.querySelectorAll(".Hover"), {
-        max: 25,
-        speed: 400
-      });
+    // VanillaTilt.init(document.querySelectorAll(".Hover"), {
+    //     max: 25,
+    //     speed: 400
+    //   });
       
   }
 
